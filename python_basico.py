@@ -1,0 +1,57 @@
+#COMO IMPRIMIR ALGO
+print ("Hello World!")
+
+#TIPO DE DADOS
+print(1+20) #int
+print (1.5 + 1 + 0.5) #float(somando um int)
+print(True) #bool
+print(False) #bool
+print("Python") #str
+
+#VARIÁVEIS E CONSTANTES
+"""As variáveis são escritas em letras minúsculas e as constantes em maiúsculas, 
+    e ambas deve seguir o padrão snake(_) """
+
+nome = "thiago"
+idade = 36
+print(nome,idade)
+
+nome, idade = "Laura", 35
+
+print(nome,idade)
+
+limite_saque_diario = 1000
+
+BRAZILIAN_STATES = ["SP","RJ","SC","RS"]
+print(BRAZILIAN_STATES)
+
+
+#CONVERTENDO TIPOS
+print(int(1.9)) #converte um float para int(resultado do print = 1)
+print(int("10")) #converte str para int
+print(float("10.10")) #converte str para float
+print(float(100)) #converte int para float (resultado do print  = 100.1)
+print(type(str(10.10))) #float para str (o type serve para mostrar o tipo de valor impresso)
+
+#USANDO PRINT/INPUT
+nome = input("informe o seu nome: ") #o input pede um dado ao usuario, e o armazena na variavel determinadada
+print(nome)
+idade = input("Informe a idade: ")
+print(nome,idade)
+print(nome, idade, end ="...\n") #o end determina o que sera impresso apos o resultado das variaveis
+print (nome,idade, sep="#") #o sep altera o separador padrão que é um espaço pelo separador desejado(neste caso o #)
+print (nome,idade, sep="#", end ="...\n") #junção deo sep e end
+
+#OPERAÇÃOES ARITIMÉTICAS
+produto_1 = 20
+produto_2 = 10
+produto_3 = 3
+
+print(produto_1 + produto_2)
+print(produto_1 - produto_2)
+print(produto_1 / produto_2) #retorna um float
+print(produto_1 // produto_2) #retorna um int
+print(produto_1 * produto_2) 
+print(produto_1 % produto_3) #retorna um módulo(resto da divisão)
+print(produto_1 ** produto_3) #retorna uma exponenciação
+
