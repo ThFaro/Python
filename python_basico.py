@@ -55,3 +55,39 @@ print(produto_1 * produto_2)
 print(produto_1 % produto_3) #retorna um módulo(resto da divisão)
 print(produto_1 ** produto_3) #retorna uma exponenciação
 
+#OPERADORES DE COMPARAÇÃO
+"""Os operadores de comparação retornam valores booleanos"""
+
+valor_1 = 200
+valor_2 = 100
+
+print(valor_1 == valor_2)
+print(valor_1 >= valor_2)
+print(valor_1 <= valor_2)
+print(valor_1 != valor_2)
+
+#OPERADORES DE ATRIBUIÇÕES
+
+saldo = 2000
+print(saldo) #atribuição simples
+
+saldo += 200 #soma
+print(saldo)
+
+saldo -= 200 #subtração
+print(saldo)
+
+saldo /= 200 #divisão com resultado float
+print(saldo)
+
+saldo //= 2 #divisão com resultado int. Obs: se o resultado anterior for float, aqui também retorna float
+print(saldo)
+
+saldo *= 200 #multiplicação
+print(saldo)
+
+saldo **= 2 #exponencicação
+print(saldo)
+
+saldo %= 3 #módulo
+print(saldo)
