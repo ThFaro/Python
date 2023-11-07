@@ -17,7 +17,6 @@ idade = 36
 print(nome,idade)
 
 nome, idade = "Laura", 35
-
 print(nome,idade)
 
 limite_saque_diario = 1000
@@ -67,7 +66,6 @@ print(valor_1 <= valor_2)
 print(valor_1 != valor_2)
 
 #OPERADORES DE ATRIBUIÇÕES
-
 saldo = 2000
 print(saldo) #atribuição simples
 
@@ -91,3 +89,46 @@ print(saldo)
 
 saldo %= 3 #módulo
 print(saldo)
+
+#OPERADORES LÓGICOS
+"""Tabela Verdade"""
+
+"""print(True and True)
+print(True and False)
+print (False and False)
+print(True or True)
+print(True or False)
+print (False or False)"""
+
+saldo = 1000
+saque = 250
+limite = 200
+conta_especial = True
+
+saldo >= saque and saque <= limite #operador AND (E)
+saldo >= saque or saque <= limite #operador OR (OU)
+
+exp = (saldo >= saque and saque <= limite) or (conta_especial and saldo >=saque)
+print(exp)
+
+#OPERADORS DE IDENTIDADE
+"""São usados para saber se dois objetos comparados ocupam a mesma posição na memória.
+    Os operadores são: IS e IS NOT """
+
+curso = "Curso Python"
+nome_curso = curso
+saldo, limite = 200,200
+
+curso is nome_curso
+
+#OPERADORES DE ASSOCIAÇÃO
+"""São operadores utilizados para verificar se um objeto esta contido em uma sequência
+    Os operadores são: IN e NOT IN """
+
+curso = "Curso Python"
+frutas = ["Laranja","Uva", "Limão"]
+saques = [1500,100]
+
+print("Python" in curso)
+print("maçã"  not in frutas)
+print(200  in saques)
